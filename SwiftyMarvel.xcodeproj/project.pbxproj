@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FA2F68A72EA5B1A00098FED8 /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = FA2F68A62EA5B1A00098FED8 /* Mockingbird */; };
+		FA2F695A2EA6D0220098FED8 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = FA2F69592EA6D0220098FED8 /* NukeUI */; };
+		FA2F695C2EA6D0290098FED8 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA2F695B2EA6D0290098FED8 /* CryptoSwift */; };
+		FA7F590C2EA5884500DBDBE1 /* .arkana.yml in Resources */ = {isa = PBXBuildFile; fileRef = FA7F590B2EA5884500DBDBE1 /* .arkana.yml */; };
+		FA7F590E2EA5897B00DBDBE1 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = FA7F590D2EA5897B00DBDBE1 /* .env */; };
+		FA7F59112EA58A3800DBDBE1 /* ArkanaKeys in Frameworks */ = {isa = PBXBuildFile; productRef = FA7F59102EA58A3800DBDBE1 /* ArkanaKeys */; };
+		FA7F59142EA5A2F500DBDBE1 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = FA7F59132EA5A2F500DBDBE1 /* Swinject */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FA7F579D2EA553D600DBDBE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +37,26 @@
 		FA7F578A2EA553D400DBDBE1 /* SwiftyMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7F579C2EA553D600DBDBE1 /* SwiftyMarvelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyMarvelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7F57A62EA553D600DBDBE1 /* SwiftyMarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyMarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7F590B2EA5884500DBDBE1 /* .arkana.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .arkana.yml; sourceTree = "<group>"; };
+		FA7F590D2EA5897B00DBDBE1 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FA2F695E2EA6DBEE0098FED8 /* Exceptions for "SwiftyMarvel" folder in "SwiftyMarvel" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FA7F57892EA553D400DBDBE1 /* SwiftyMarvel */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FA7F578C2EA553D400DBDBE1 /* SwiftyMarvel */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FA2F695E2EA6DBEE0098FED8 /* Exceptions for "SwiftyMarvel" folder in "SwiftyMarvel" target */,
+			);
 			path = SwiftyMarvel;
 			sourceTree = "<group>";
 		};
@@ -52,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2F695A2EA6D0220098FED8 /* NukeUI in Frameworks */,
+				FA2F695C2EA6D0290098FED8 /* CryptoSwift in Frameworks */,
+				FA7F59112EA58A3800DBDBE1 /* ArkanaKeys in Frameworks */,
+				FA7F59142EA5A2F500DBDBE1 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2F68A72EA5B1A00098FED8 /* Mockingbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +105,12 @@
 		FA7F57812EA553D400DBDBE1 = {
 			isa = PBXGroup;
 			children = (
+				FA7F590D2EA5897B00DBDBE1 /* .env */,
+				FA7F590B2EA5884500DBDBE1 /* .arkana.yml */,
 				FA7F578C2EA553D400DBDBE1 /* SwiftyMarvel */,
 				FA7F579F2EA553D600DBDBE1 /* SwiftyMarvelTests */,
 				FA7F57A92EA553D600DBDBE1 /* SwiftyMarvelUITests */,
+				FA7F59122EA5A2F500DBDBE1 /* Frameworks */,
 				FA7F578B2EA553D400DBDBE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +123,13 @@
 				FA7F57A62EA553D600DBDBE1 /* SwiftyMarvelUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FA7F59122EA5A2F500DBDBE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +152,10 @@
 			);
 			name = SwiftyMarvel;
 			packageProductDependencies = (
+				FA7F59102EA58A3800DBDBE1 /* ArkanaKeys */,
+				FA7F59132EA5A2F500DBDBE1 /* Swinject */,
+				FA2F69592EA6D0220098FED8 /* NukeUI */,
+				FA2F695B2EA6D0290098FED8 /* CryptoSwift */,
 			);
 			productName = SwiftyMarvel;
 			productReference = FA7F578A2EA553D400DBDBE1 /* SwiftyMarvel.app */;
@@ -135,6 +179,7 @@
 			);
 			name = SwiftyMarvelTests;
 			packageProductDependencies = (
+				FA2F68A62EA5B1A00098FED8 /* Mockingbird */,
 			);
 			productName = SwiftyMarvelTests;
 			productReference = FA7F579C2EA553D600DBDBE1 /* SwiftyMarvelTests.xctest */;
@@ -195,6 +240,14 @@
 			);
 			mainGroup = FA7F57812EA553D400DBDBE1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FA7F585E2EA55A4800DBDBE1 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				FA7F585F2EA55B4500DBDBE1 /* XCRemoteSwiftPackageReference "mockingbird" */,
+				FA7F58622EA56B3000DBDBE1 /* XCRemoteSwiftPackageReference "Nuke" */,
+				FA7F58632EA56B9800DBDBE1 /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */,
+				FA7F58642EA56BAF00DBDBE1 /* XCRemoteSwiftPackageReference "Swinject" */,
+				FA7F590F2EA58A3800DBDBE1 /* XCLocalSwiftPackageReference "ArkanaKeys/ArkanaKeys" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FA7F578B2EA553D400DBDBE1 /* Products */;
 			projectDirPath = "";
@@ -212,6 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7F590E2EA5897B00DBDBE1 /* .env in Resources */,
+				FA7F590C2EA5884500DBDBE1 /* .arkana.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +452,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftyMarvel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +484,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftyMarvel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -570,6 +627,83 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		FA7F590F2EA58A3800DBDBE1 /* XCLocalSwiftPackageReference "ArkanaKeys/ArkanaKeys" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ArkanaKeys/ArkanaKeys;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA7F585E2EA55A4800DBDBE1 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+		FA7F585F2EA55B4500DBDBE1 /* XCRemoteSwiftPackageReference "mockingbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/typealiased/mockingbird";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.20.0;
+			};
+		};
+		FA7F58622EA56B3000DBDBE1 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		FA7F58632EA56B9800DBDBE1 /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukepistrol/SwiftLintPlugin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.61.0;
+			};
+		};
+		FA7F58642EA56BAF00DBDBE1 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA2F68A62EA5B1A00098FED8 /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7F585F2EA55B4500DBDBE1 /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
+		};
+		FA2F69592EA6D0220098FED8 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7F58622EA56B3000DBDBE1 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		FA2F695B2EA6D0290098FED8 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7F585E2EA55A4800DBDBE1 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		FA7F59102EA58A3800DBDBE1 /* ArkanaKeys */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ArkanaKeys;
+		};
+		FA7F59132EA5A2F500DBDBE1 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7F58642EA56BAF00DBDBE1 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA7F57822EA553D400DBDBE1 /* Project object */;
 }
