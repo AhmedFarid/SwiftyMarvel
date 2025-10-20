@@ -7,16 +7,27 @@ This app implements (Clean Architecture) and some of the practices for iOS app d
 Folder Structure
 
 📦SwiftyMarvel
+
 ┣ 📂Core
+
 ┃ ┣ 📂DI
+
 ┃ ┗ 📂Extensions
+
 ┣ 📂Data
+
 ┃ ┣ 📂Constants
+
 ┃ ┣ 📂DataSource
+
 ┃ ┣ 📂Model
+
 ┃ ┣ 📂Mappers
+
 ┃ ┣ 📂Networking
+
 ┃ ┗ 📂Repository
+
 ┣ 📂Domain
 ┃ ┣ 📂Entity
 ┃ ┣ 📂Errors
